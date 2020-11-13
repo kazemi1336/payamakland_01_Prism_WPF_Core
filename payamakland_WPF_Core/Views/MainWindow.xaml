@@ -57,26 +57,26 @@
             <ColumnDefinition Width="200"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <hc:SideMenu>
-            <hc:SideMenuItem Header="ComboBox">
+        <hc:SideMenu SideBrush="{DynamicResource PrimaryBrush}">
+            <hc:SideMenuItem Command="{Binding GotoComboBoxCommand}" Header="ComboBox">
                 <hc:SideMenuItem.Icon>
                     <Image Width="24" Height="24" Source="D:\Document\Visual Studio 2019\WPF\imge\combo.png"/>
                 </hc:SideMenuItem.Icon>
                 
             </hc:SideMenuItem>
-            <hc:SideMenuItem Header="ListBox">
+            <hc:SideMenuItem Command="{Binding GotoListBoxCommand}" Header="ListBox">
                 <hc:SideMenuItem.Icon>
                     <Image Width="24" Height="24" Source="D:\Document\Visual Studio 2019\WPF\imge\Listbox.png"/>
                 </hc:SideMenuItem.Icon>
 
             </hc:SideMenuItem>
-            <hc:SideMenuItem Header="TabControl">
+            <hc:SideMenuItem  Command="{Binding GotoTabControlCommand}" Header="TabControl">
                 <hc:SideMenuItem.Icon>
                     <Image Width="24" Height="24" Source="D:\Document\Visual Studio 2019\WPF\imge\TabControl.png"/>
                 </hc:SideMenuItem.Icon>
-
+                
             </hc:SideMenuItem>
         </hc:SideMenu>
-        <ContentControl Grid.Column="1" prism:RegionManager.RegionName="ContentRegion" />
+        <ContentControl Margin="10" Grid.Column="1" prism:RegionManager.RegionName="ContentRegion" />
     </Grid>
 </hc:Window>
